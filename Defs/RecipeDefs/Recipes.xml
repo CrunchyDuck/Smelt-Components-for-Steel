@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <RecipeDef>
+    <defName>ExtractMetalFromIndustrialComponents</defName>
+    <label>smelt metal from simple components</label>
+    <description>Use heat and strong electromagnets to extract useful metal from simple components.</description>
+    <jobString>Smelting metal from simple components.</jobString>
+    <workAmount>200</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Steel>10</Steel>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+	  <li>ElectricSmelter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+    <RecipeDef>
+    <defName>ExtractMetalFromComponentsSpacer</defName>
+    <label>smelt metal from advanced components</label>
+    <description>Use heat and strong electromagnets to extract useful metal from advanced components.</description>
+    <jobString>Smelting metal from advanced components.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Steel>18</Steel>
+	  <Plasteel>8</Plasteel>
+	  <Gold>2</Gold>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+	  <li>ElectricSmelter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <!-- Bulk recipes -->
+  
+    <RecipeDef>
+    <defName>BulkExtractMetalFromIndustrialComponents</defName>
+    <label>bulk smelt metal from simple components</label>
+    <description>Use heat and strong electromagnets to extract useful metal from simple components.</description>
+    <jobString>Smelting metal from simple components.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Steel>50</Steel>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+	  <li>ElectricSmelter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>BulkExtractMetalFromComponentsSpacer</defName>
+    <label>bulk smelt metal from advanced components</label>
+    <description>Use heat and strong electromagnets to extract useful metal from advanced components.</description>
+    <jobString>Smelting metal from advanced components.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Steel>90</Steel>
+	  <Plasteel>40</Plasteel>
+	  <Gold>10</Gold>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+	  <li>ElectricSmelter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+</Defs>
